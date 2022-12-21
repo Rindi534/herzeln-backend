@@ -16,7 +16,7 @@ CREATE TABLE users_roles (
     user_id BINARY(16) NOT NULL,
     role VARCHAR(255) NOT NULL,
 
-    CONSTRAINT fk_user_role FOREIGN KEY (user_id) references herzeln.users (id)
+    CONSTRAINT fk_user_role FOREIGN KEY (user_id) REFERENCES herzeln.users (id)
 );
 
 
